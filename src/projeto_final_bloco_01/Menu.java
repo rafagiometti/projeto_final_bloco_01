@@ -2,6 +2,9 @@ package projeto_final_bloco_01;
 
 import java.io.IOException;
 import java.util.Scanner;
+
+import projeto_final_bloco_01.model.Brinquedo;
+import projeto_final_bloco_01.model.Racao;
 import projeto_final_bloco_01.util.Cores;
 
 public class Menu {
@@ -9,6 +12,15 @@ public class Menu {
 
         Scanner leia = new Scanner(System.in);
         int opcao;
+        
+        //Teste do modelo de dados
+        Racao r1 = new Racao(1, "Golden 10kg", 130f, 5, "Cachorro");
+        r1.visualizar();
+        
+        Brinquedo b1 = new Brinquedo(2, "Bolinha de duas cores", 14.99f, 9, "Plástico");
+        b1.visualizar();
+        
+        
 
         while (true) {
 
